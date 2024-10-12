@@ -18,7 +18,7 @@ export const isAuthenticated = async (req, res, next) => {
       });
     }
 
-    req.user = decode.userId;
+    req.user = decode.id;
 
     next();
   } catch (error) {
